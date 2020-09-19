@@ -1,43 +1,205 @@
 {% extends "layout.html" %} 
 
 {% block content %}
-<!--bootstrap - Carousel-->
-<div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">
-    This is a simple hero unit, a simple jumbotron-style component for calling
-    extra attention to featured content or information.
-  </p>
-  <hr class="my-4" />
-  <p>
-    It uses utility classes for typography and spacing to space content out
-    within the larger container.
-  </p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+<div class="container my-4">
+  <hr class="my-4">
+
+  <!--Carousel Wrapper-->
+  <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+    <!--Controls-->
+    <div class="controls-top">
+      <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+      <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+    </div>
+    <!--/.Controls-->
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+      <li data-target="#multi-item-example" data-slide-to="1"></li>
+      <li data-target="#multi-item-example" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--/.First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--/.Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--/.Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+
 </div>
+
+
 
 <div class="container" style="margin-top: 1%">
   <!-- PRIMERA FILA-->
   <div class="row"style="margin-top: 1%;">
     <!-- PRIMERA COLUMNA-->
     <div class="col-sm">
-      <!--ITALIANA-->
+      <!--Polera  1-->
       <section>
         
           <div class="card text-left">
             <img
               class="card-img-top"
-              src="images/pizzasru/pepperoni.png"
+              src="../static/img/Poleras/ROI3KS-HERO.jpg"
               alt="Card image"
             />
             <div class="card-body">
-              <h4 class="card-title">Pizza italiana</h4>
+              <h4 class="card-title">Pro Skate Washed Out T-Shirt</h4>
               <p class="card-text text-left">
-                Si amas lo clásico, esta es tu pizza. Delicioso queso
-                Mozzarella, jamón y tomate al oreganato.
+                $34.50
               </p>
               <a href="#" class="btn btn-primary bg-danger border-danger"
-                >Añadir al carrito</a
+                ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                </svg> Añadir al carrito</a
               >
             </div>
           </div>
@@ -45,71 +207,80 @@
       </section>
     </div>
 
-    <!--HAWAIANA-->
+    <!--Polera 2-->
     <div class="col-sm">
       <section>
         
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="images/pizzasru/3 carnes.png"
-              alt="Card image"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pizza hawaiana</h4>
-              <p class="card-text">
-                ¡Para quienes aman ser diferentes! Irresistible queso
-                Mozzarella, jamón y trozos de piña.
-              </p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
-            </div>
+        <div class="card text-left">
+          <img
+            class="card-img-top"
+            src="../static/img/Poleras/ROTWHT-HERO.webp"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Vans Crew T-Shirt</h4>
+            <p class="card-text text-left">
+              $24.50
+            </p>
+            <a href="#" class="btn btn-primary bg-danger border-danger"
+              ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              </svg> Añadir al carrito</a
+            >
           </div>
+        </div>
+      
+    </section>
+    </div>
+    <!--Polera 3 -->
+    <div class="col-sm">
+      <section>
         
-      </section>
+        <div class="card text-left">
+          <img
+            class="card-img-top"
+            src="../static/img/Poleras/ROY85W-HERO.jpg"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Vans X Shake Junt Long Sleeve T-Shirt</h4>
+            <p class="card-text text-left" >
+              $34.50
+            </p>
+            <a href="#" class="btn btn-primary bg-danger border-danger"
+              ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              </svg> Añadir al carrito</a
+            >
+          </div>
+        </div>
+      
+    </section>
     </div>
     <!--Meaty Lovers -->
     <div class="col-sm">
       <section>
         
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="images/pizzasru/3 carnes.png"
-              alt="Card image"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pizza hawaiana</h4>
-              <p class="card-text">
-                ¡Para quienes aman ser diferentes! Irresistible queso
-                Mozzarella, jamón y trozos de piña.
-              </p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
-            </div>
+        <div class="card text-left">
+          <img
+            class="card-img-top"
+            src="../static/img/Poleras/ROYBLK-HERO.jpg"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Vans X Shake Junt Long Sleeve T-Shirt</h4>
+            <p class="card-text text-left" >
+              $34.50
+            </p>
+            <a href="#" class="btn btn-primary bg-danger border-danger"
+              ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              </svg> Añadir al carrito</a
+            >
           </div>
-        
-      </section>
-    </div>
-    <!--Meaty Lovers -->
-    <div class="col-sm">
-      <section>
-        
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="images/pizzasru/4queso.png"
-              alt="Card image"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pizza hawaiana</h4>
-              <p class="card-text">
-                ¡Para quienes aman ser diferentes! Irresistible queso
-                Mozzarella, jamón y trozos de piña.
-              </p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-        
-      </section>
+        </div>
+      
+    </section>
     </div>
   </div>
 
@@ -117,90 +288,103 @@
   <div class="row" style="margin-top: 1%;">
     <div class="col-sm">
       <section>
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="images/pizzas/hawaina.png"
-              alt="Card image"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pizza hawaiana</h4>
-              <p class="card-text">
-                ¡Para quienes aman ser diferentes! Irresistible queso
-                Mozzarella, jamón y trozos de piña.
-              </p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
-            </div>
+        
+        <div class="card text-left">
+          <img
+            class="card-img-top"
+            src="../static/img/Poleras/ROZWHT-HERO.jpg"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Vans X Shake Junt Long Sleeve T-Shirt</h4>
+            <p class="card-text text-left" >
+              $34.50
+            </p>
+            <a href="#" class="btn btn-primary bg-danger border-danger"
+              ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              </svg> Añadir al carrito</a
+            >
           </div>
-
-      </section>
+        </div>
+      
+    </section>
     </div>
 
     <div class="col-sm">
       <section>
-
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="images/pizzas/hawaina.png"
-              alt="Card image"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pizza hawaiana</h4>
-              <p class="card-text">
-                ¡Para quienes aman ser diferentes! Irresistible queso
-                Mozzarella, jamón y trozos de piña.
-              </p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
-            </div>
+        
+        <div class="card text-left">
+          <img
+            class="card-img-top"
+            src="../static/img/Poleras/RP3WHT-HERO.jpg"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Kyle Walker Classic Rose T-Shirt</h4>
+            <p class="card-text text-left" >
+              $24.50
+            </p>
+            <a href="#" class="btn btn-primary bg-danger border-danger"
+              ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              </svg> Añadir al carrito</a
+            >
           </div>
-
-      </section>
+        </div>
+      
+    </section>
     </div>
 
     <div class="col-sm">
       <section>
-
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="images/pizzas/hawaina.png"
-              alt="Card image"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pizza hawaiana</h4>
-              <p class="card-text">
-                ¡Para quienes aman ser diferentes! Irresistible queso
-                Mozzarella, jamón y trozos de piña.
-              </p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
-            </div>
+        
+        <div class="card text-left">
+          <img
+            class="card-img-top"
+            src="../static/img/Poleras/RP13KS-HERO.jpg"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Kyle Walker Rose Long Sleeve T-Shirt</h4>
+            <p class="card-text text-left" >
+              $44.50
+            </p>
+            <a href="#" class="btn btn-primary bg-danger border-danger"
+              ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              </svg> Añadir al carrito</a
+            >
           </div>
-
-      </section>
+        </div>
+      
+    </section>
       
     </div>
 
     <div class="col-sm">
       <section>
-
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="images/pizzas/hawaina.png"
-              alt="Card image"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pizza hawaiana</h4>
-              <p class="card-text">
-                ¡Para quienes aman ser diferentes! Irresistible queso
-                Mozzarella, jamón y trozos de piña.
-              </p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
-            </div>
+        
+        <div class="card text-left">
+          <img
+            class="card-img-top"
+            src="../static/img/Poleras/RP23KS-HERO.jpg"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Kyle Walker Checkerboard T-Shirt</h4>
+            <p class="card-text text-left" >
+              $39.50
+            </p>
+            <a href="#" class="btn btn-primary bg-danger border-danger"
+              ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              </svg> Añadir al carrito</a
+            >
           </div>
-
-      </section>
+        </div>
+      
+    </section>
       
     </div>
   </div>
@@ -210,90 +394,102 @@
 
     <div class="col-sm">
       <section>
-
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="images/pizzas/hawaina.png"
-              alt="Card image"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pizza hawaiana</h4>
-              <p class="card-text">
-                ¡Para quienes aman ser diferentes! Irresistible queso
-                Mozzarella, jamón y trozos de piña.
-              </p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
-            </div>
+        
+        <div class="card text-left">
+          <img
+            class="card-img-top"
+            src="../static/img/Poleras/RR6EEI-HERO.jpg"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Vans X Shake Junt Menu T-Shirt</h4>
+            <p class="card-text text-left" >
+              $24.50
+            </p>
+            <a href="#" class="btn btn-primary bg-danger border-danger"
+              ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              </svg> Añadir al carrito</a
+            >
           </div>
-
-      </section>
+        </div>
+      
+    </section>
     </div>
 
     <div class="col-sm">
       <section>
-
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="images/pizzas/hawaina.png"
-              alt="Card image"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pizza hawaiana</h4>
-              <p class="card-text">
-                ¡Para quienes aman ser diferentes! Irresistible queso
-                Mozzarella, jamón y trozos de piña.
-              </p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
-            </div>
+        
+        <div class="card text-left">
+          <img
+            class="card-img-top"
+            src="../static/img/Poleras/S2MBLK-HERO.jpg"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Thank You Floral Long Sleeve T-Shirt</h4>
+            <p class="card-text text-left" >
+              $28.00
+            </p>
+            <a href="#" class="btn btn-primary bg-danger border-danger"
+              ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              </svg> Añadir al carrito</a
+            >
           </div>
-
-      </section>
+        </div>
+      
+    </section>
     </div>
 
     <div class="col-sm">
       <section>
-
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="images/pizzas/hawaina.png"
-              alt="Card image"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pizza hawaiana</h4>
-              <p class="card-text">
-                ¡Para quienes aman ser diferentes! Irresistible queso
-                Mozzarella, jamón y trozos de piña.
-              </p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
-            </div>
+        
+        <div class="card text-left">
+          <img
+            class="card-img-top"
+            src="../static/img/Poleras/TUNBLK-HERO.webp"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Vans X Shake Junt Chicken & Waffle T-Shirt</h4>
+            <p class="card-text text-left" >
+              $24.50
+            </p>
+            <a href="#" class="btn btn-primary bg-danger border-danger"
+              ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              </svg> Añadir al carrito</a
+            >
           </div>
-
-      </section>
+        </div>
+      
+    </section>
     </div>
 
     <div class="col-sm">
       <section>
-
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="images/pizzas/hawaina.png"
-              alt="Card image"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pizza hawaiana</h4>
-              <p class="card-text">
-                ¡Para quienes aman ser diferentes! Irresistible queso
-                Mozzarella, jamón y trozos de piña.
-              </p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
-            </div>
+        
+        <div class="card text-left">
+          <img
+            class="card-img-top"
+            src="../static/img/Poleras/TUPBLK-HERO.jpg"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h4 class="card-title">66 Supply T-Shirt</h4>
+            <p class="card-text text-left" >
+              $24.00
+            </p>
+            <a href="#" class="btn btn-primary bg-danger border-danger"
+              ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              </svg> Añadir al carrito</a
+            >
           </div>
-
-      </section>
+        </div>
+      
+    </section>
     </div>
     </div>
     </div>
