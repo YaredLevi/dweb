@@ -7,6 +7,23 @@ min-height: 100vh;
 flex-direction: column;
 }
 
+#centrarh{
+text-align: center;
+}
+#tlogo{
+    font-size: 200%;
+    padding-left: 2%;
+}
+
+#btnini{
+    padding-right: 2%;
+}
+
+#imgfooter{
+    display:block;
+    margin:auto;
+    }
+
 html,
 body {
     margin: 0px;
@@ -25,16 +42,12 @@ header {
     background-color: #0086CD;
 }
 
-footer {
-    color: white;
-    background-color: #1A1A1A;
-    width: 100%;
-    height: 81px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
 
 .container {
     padding:12px;
+}
+
+footer{
+    background-color: black;
+    color: white;
 }
