@@ -1,6 +1,32 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>About</h1>
+<div class="container-fluid" style="margin-top: 2%; margin-bottom: 2%; text-align:center">
+    <div class="jumbotron">
+        <h1 class="display-4">Iniciar sesión</h1>
+    </br>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <form>
+                    <label for="username">
+                        <i class="fas fa-user"></i>
+                    </label>
+                    <input type="text" name="username" placeholder="Nombre de usuario" id="username" required>
+                    <br/>
+                    <label for="password">
+                        <i class="fas fa-lock"></i>
+                    </label>
+                    <input type="password" name="password" placeholder="Contraseña" id="password" required>
+                    <div class="msg">{{ msg }}</div>
+                    <input type="submit" value="Login">
 
+                                   
+            </form>
+            
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
