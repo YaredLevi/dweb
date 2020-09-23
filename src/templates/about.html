@@ -1,7 +1,11 @@
 {% extends "layout.html" %}
 
 {% block content %}
-
+<script>
+	function exito(){
+		window.alert("Registro exitoso.");
+	}
+</script>
 <div class="login">
     <h1>Bienvenido a Zafiro</h1>
 
@@ -9,7 +13,7 @@
         <a style="color: #343A40;" href="{{ url_for('about') }}" class="active">Ingresa</a>
         <a style="color: #343A40;" href="{{ url_for('register') }}">Registrate</a>
     </div>
-    <form action="{{ url_for('about') }}" method="post">
+    <form action="/" onsubmit="exito()" method="get" method="post">
         <label for="username">
             <i class="fas fa-user"></i>
         </label>
