@@ -3,14 +3,14 @@
 {% block content %}
 
     <!-- VISUALIZACIÓN DE ARTICULOS-->
-    <div class="container-fluid sticky-top2" style="margin-top: 2%; margin-bottom: 2%;">
+    <div class="container-fluid sticky-top2">
         <h1 style="text-align: center;">Carrito de compras</h1>
         <div class="container" style="overflow-x:auto;">
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover table-responsive">
                 <thead>
-                    <tr>
+                    <tr style="text-align: center;">
                         <th>Imagen</th>
-                        <th>Nombre del producto</th>
+                        <th>Nombre</th>
                         <th>Precio</th>
                         <th>Descripción</th>
                         <th>Tamaño</th>
@@ -18,7 +18,7 @@
                     </tr>
                 </thead>
                 <tbody >
-                    <tr >
+                    <tr style="text-align: center;">
                         <th><img src="../static/img/Coleccion/CZEY28-HERO.jpg" alt=""></th>
                         <th>SVD Dojo T-Shirt</th>
                         <th>$14.990</th>
@@ -26,7 +26,7 @@
                         <th>L</th>
                         <th><a href="#" class="btn btn-primary bg-danger border-danger"> X</a></th>
                     </tr>
-                    <tr>
+                    <tr style="text-align: center;">
                         <th><img src="../static/img/Coleccion/CZEYB2-HERO.jpg" alt=""></th>
                         <th>Left Chest Logo T-Shirt</th>
                         <th>$14.600</th>
@@ -34,7 +34,7 @@
                         <th>XL</th>
                         <th><a href="#" class="btn btn-primary bg-danger border-danger"> X</a></th>
                     </tr>
-                    <tr>
+                    <tr style="text-align: center;">
                         <th><img src="../static/img/Coleccion/JAYY28-HERO.jpg" alt=""></th>
                         <th>Vans OTW T-Shirt</th>
                         <th>$14.990</th>
@@ -44,10 +44,12 @@
                     </tr>
                 </tbody>
             </table>
-            <h1>Precio total: $ 44.580</h1>
-            <h1></h1>
-            <a href="#" class="btn btn-primary bg-danger border-danger">&laquo; Cancelar</a>
-            <a href="#" class="btn" style="background-color: chartreuse; color: black;">Siguiente &raquo;</a>
+            <h1 style="text-align: center;">Precio total: $ 44.580</h1>
+            <div style="text-align: center;">
+                <a href="#" class="btn btn-primary bg-danger border-danger">&laquo; Cancelar</a>
+                <a href="#" class="btn" style="background-color: chartreuse; color: black;">Siguiente
+                    &raquo;</a>
+            </div>
         </div>
 
     </div>
