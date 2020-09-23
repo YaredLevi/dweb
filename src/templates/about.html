@@ -1,32 +1,25 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="container-fluid" style="margin-top: 2%; margin-bottom: 2%; text-align:center">
-    <div class="jumbotron">
-        <h1 class="display-4">Iniciar sesión</h1>
-    </br>
-        <div class="row">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-sm-6">
-                <form>
-                    <label for="username">
-                        <i class="fas fa-user"></i>
-                    </label>
-                    <input type="text" name="username" placeholder="Nombre de usuario" id="username" required>
-                    <br/>
-                    <label for="password">
-                        <i class="fas fa-lock"></i>
-                    </label>
-                    <input type="password" name="password" placeholder="Contraseña" id="password" required>
-                    <div class="msg">{{ msg }}</div>
-                    <input type="submit" value="Login">
 
-                                   
-            </form>
-            
-            </div>
-        </div>
+<div class="login">
+    <h1>Bienvenido a Zafiro</h1>
+
+    <div class="links">
+        <a style="color: #343A40;" href="{{ url_for('about') }}" class="active">Ingresa</a>
+        <a style="color: #343A40;" href="{{ url_for('register') }}">Registrate</a>
     </div>
+    <form action="{{ url_for('about') }}" method="post">
+        <label for="username">
+            <i class="fas fa-user"></i>
+        </label>
+        <input type="text" name="username" placeholder="Username" id="username" required>
+        <label for="password">
+            <i class="fas fa-lock"></i>
+        </label>
+        <input type="password" name="password" placeholder="Password" id="password" required>
+        <div class="msg">{{ msg }}</div>
+        <input type="submit" value="Login">
+    </form>
 </div>
 {% endblock %}
