@@ -14,5 +14,9 @@ def about():
 def register():
     return render_template('register.html')
 
+@app.route('/carrito')
+def carrito():
+    return render_template('carrito.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
