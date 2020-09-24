@@ -70,7 +70,10 @@
 }
 @media only screen and (max-width:620px) {
     /* For mobile phones: */
-    .login, .register {
-      width:100%;
+    .login, .register{
+        width:90%;
+    }
+    input#username, input#password, input#email {
+        width:70%;
     }
   }
