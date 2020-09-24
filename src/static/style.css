@@ -73,7 +73,7 @@
     .login, .register{
         width:90%;
     }
-    input#username, input#password, input#email {
+    input#username, input#password, input#email, input#name, input#direccion {
         width:70%;
     }
   }
