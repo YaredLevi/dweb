@@ -3,6 +3,7 @@
     background-color: #ffffff;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
     margin: 100px auto;
+    
 }
 .login h1, .register h1 {
     text-align: center;
@@ -34,6 +35,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 20px;
+    width: 100%;
 }
 .login form label, .register form label {
     display: flex;
@@ -66,3 +68,9 @@
     background-color: #2868c7;
     transition: background-color 0.2s;
 }
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .login, .register {
+      width:100%;
+    }
+  }
